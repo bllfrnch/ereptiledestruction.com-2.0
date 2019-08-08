@@ -11,6 +11,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body * {
+  box-sizing: border-box;
+}
 article,
 aside,
 details,

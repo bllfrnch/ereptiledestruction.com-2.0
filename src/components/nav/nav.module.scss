@@ -1,0 +1,40 @@
+@import '../../styles/index.scss';
+
+.nav {
+  text-align: center;
+
+  ul {
+    @include medium-down {
+      flex-wrap: wrap;
+    }
+
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    a:hover {
+      background-color: map-get($colors, 'green-500');
+      color: map-get($colors, 'white');
+      text-shadow: 0 1px 0 map-get($colors, 'black');
+    }
+
+    &.nav-el-fb {
+      a {
+        margin-left: .75rem;
+        padding: 0;
+      }
+
+      a:hover {
+        background-color: inherit;
+      }
+    }
+  }
+
+  a {
+    padding: .125rem .75rem;
+  }
+}
