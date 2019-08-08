@@ -1,4 +1,4 @@
-@import '../../styles/index.scss';
+@import './global.scss';
 
 html {
   font-family: sans-serif;
@@ -6,7 +6,6 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  background-color: map-get($colors, 'black');
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -205,8 +204,6 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -596,7 +593,6 @@ td:last-child {
 }
 tt,
 code {
-  background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
   font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
     'Liberation Mono', Menlo, Courier, monospace;

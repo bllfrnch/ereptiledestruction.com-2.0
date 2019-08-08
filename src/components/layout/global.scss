@@ -1,0 +1,6 @@
+@import '../../styles/index.scss';
+
+body {
+  background-color: map-get($colors, 'black');
+  color: map-get($colors, 'white');
+}
