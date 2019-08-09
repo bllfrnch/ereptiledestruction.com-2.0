@@ -1,7 +1,7 @@
 @import '~sass-mediaqueries/media-queries';
 
 $small: 600px;
-$medium: 1000px;
+$medium: 1024px;
 
 @mixin large {
   @include mq($min-width: $medium) {

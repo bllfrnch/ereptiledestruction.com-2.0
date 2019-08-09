@@ -1,9 +1,26 @@
+@import '../../styles/index.scss';
+
 .layout {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   min-height: 100vh;
+  max-width: 550px;
+  padding: 16px;
+
+  @include medium {
+    max-width: 800px;
+  }
+
+  @include large {
+    max-width: 1150px;
+  }
 
   main {
     flex: 1;
+  }
+
+  footer {
+    padding: 1rem;
   }
 }
