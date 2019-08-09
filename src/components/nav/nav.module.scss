@@ -1,6 +1,12 @@
 @import '../../styles/index.scss';
 
 .nav {
+  font-weight: 800;
+
+  @include large {
+    font-size: 1.125rem;
+  }
+
   ul {
     @include medium-down {
       flex-wrap: wrap;
@@ -33,6 +39,8 @@
   }
 
   a {
+    color: map-get($colors, 'pink-500');
     padding: .125rem .75rem;
+    text-decoration: none;
   }
 }

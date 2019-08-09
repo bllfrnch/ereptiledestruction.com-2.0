@@ -7,9 +7,7 @@ import ereptileLogo from '../../images/ed-logo.png';
 import ereptileLogoMobile from '../../images/ed-logo-mobile.png';
 
 const Header = ({ siteTitle }) => (
-  <header
-    className={styles.header}
-  >
+  <header className={styles.header}>
     <h1>
       <Link to="/">
         <picture>
