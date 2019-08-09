@@ -3,34 +3,41 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-    modules: [
+    sections: [
       {
-        href: `#intro`,
+        id: `intro`,
         label: `Intro`,
+        headline: `Come on Now`,
       },
       {
-        href: `#audio`,
+        id: `audio`,
         label: `Audio`,
+        headline: `Audio`,
       },  
       {
-        href: `#video`,
+        id: `video`,
         label: `Video`,
+        headline: `Video`,
       },  
       {
-        href: `#shows`,
+        id: `shows`,
         label: `Shows`,
+        headline: `Shows`,
       },  
       {
-        href: `#mailing-list`,
+        id: `#mailinglist`,
         label: `Mailing List`,
+        headline: `Mailing List`,
       },  
       {
-        href: `#pics`,
+        id: `pics`,
         label: `Pics`,
+        headline: `Pics`,
       },  
       {
-        href: `#contact`,
+        id: `contact`,
         label: `Contact`,
+        headline: `Contact`,
       }
     ]
   },

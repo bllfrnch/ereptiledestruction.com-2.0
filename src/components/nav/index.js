@@ -8,8 +8,8 @@ const Nav = (props) => {
       query {
         site {
           siteMetadata {
-            modules {
-              href
+            sections {
+              id
               label
             }
           }
@@ -18,14 +18,12 @@ const Nav = (props) => {
     `
   );
 
-  console.log('site: ', site);
-
   return (
     <nav className={styles.nav}>
       <ul>
-        {site.siteMetadata.modules.map(module => (
+        {site.siteMetadata.sections.map(module => (
           <li>
-            <Link to={module.href}>{module.label}</Link>
+            <Link to={`#${module.id}`}>{module.label}</Link>
           </li>
         ))}
       </ul>

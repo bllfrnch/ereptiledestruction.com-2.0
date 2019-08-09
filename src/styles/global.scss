@@ -4,4 +4,9 @@
 body {
   background-color: map-get($colors, 'black');
   color: map-get($colors, 'white');
+  min-height: 100vh;
+}
+
+body * {
+  box-sizing: border-box;
 }
