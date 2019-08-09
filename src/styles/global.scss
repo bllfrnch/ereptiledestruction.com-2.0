@@ -1,5 +1,6 @@
 @import './index.scss';
 @import './base.scss';
+@import './typography.scss';
 
 body {
   background-color: map-get($colors, 'black');
