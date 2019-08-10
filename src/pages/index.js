@@ -22,17 +22,14 @@ const IndexPage = () => {
 
   const { siteMetadata } = site;
   const { sections } = siteMetadata;
-  console.log(sections);
-
   const sectionModules = {};
+
   sections.forEach(section => {
     const { id } = section;
     sectionModules[
       id
     ] = require(`../components/section-types/${section.id}`).default;
   });
-
-  console.log('sectionModules', sectionModules);
 
   return (
     <Layout>
