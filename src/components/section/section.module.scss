@@ -1,8 +1,18 @@
 @import '../../styles/index.scss';
 
 .section {
+  background-color: scale-color(
+    $color: map-get($colors, 'black'),
+    $lightness: 10%
+  );
+  border-bottom: solid 8px
+    scale-color($color: map-get($colors, 'black'), $lightness: 20%);
+  margin-bottom: 2rem;
+  padding: 1rem;
+
   h2 {
     font-size: 1.5rem;
+    text-align: center;
 
     @include medium {
       font-size: 1.75rem;
@@ -10,6 +20,82 @@
 
     @include large {
       font-size: 2rem;
+    }
+  }
+}
+
+.sectionHeadline {
+  .icon {
+    &:before,
+    &:after {
+      display: inline-block;
+      padding-left: 0.75rem;
+    }
+
+    &:before {
+      transform: scale(-1, 1);
+    }
+
+    &:after {
+      transform: scaleX(1);
+    }
+  }
+
+  .audio {
+    &:before,
+    &:after {
+      content: '\1F4FB';
+    }
+  }
+
+  .contact {
+    &:before,
+    &:after {
+      content: '🦕🦖';
+    }
+  }
+
+  .intro {
+    &:before,
+    &:after {
+      content: '\1F346 \1F346 \1F346';
+    }
+  }
+
+  .mailinglist {
+    &:before,
+    &:after {
+      content: '\1F4ED';
+    }
+  }
+
+  .pics {
+    &:before,
+    &:after {
+      content: '\1F305';
+    }
+  }
+
+  .shows {
+    &:before,
+    &:after {
+      content: '💥 🔥 ⚡️';
+      padding-right: 0.75rem;
+    }
+
+    &:before {
+      transform: scaleX(1);
+    }
+
+    &:after {
+      transform: scale(-1, 1);
+    }
+  }
+
+  .video {
+    &:before,
+    &:after {
+      content: '\1F4FA';
     }
   }
 }
