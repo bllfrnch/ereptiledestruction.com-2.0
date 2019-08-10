@@ -25,7 +25,7 @@ module.exports = {
         headline: `Shows`,
       },  
       {
-        id: `#mailinglist`,
+        id: `mailinglist`,
         label: `Mailing List`,
         headline: `Mailing List`,
       },  

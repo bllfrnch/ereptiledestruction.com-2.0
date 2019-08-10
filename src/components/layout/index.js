@@ -23,12 +23,10 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <div class={styles.layout}>
+    <div className={styles.layout}>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Honk Honk Now
-      </footer>
+      <footer>© {new Date().getFullYear()}, Honk Honk Now</footer>
     </div>
   );
 };

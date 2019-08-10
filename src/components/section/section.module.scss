@@ -1,5 +1,15 @@
+@import '../../styles/index.scss';
+
 .section {
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+
+    @include medium {
+      font-size: 1.75rem;
+    }
+
+    @include large {
+      font-size: 2rem;
+    }
   }
 }
