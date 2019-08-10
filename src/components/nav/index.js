@@ -3,7 +3,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import fbLogo from '../../images/FB-f-Logo__blue_29.png';
 import styles from './nav.module.scss';
 
-const Nav = (props) => {
+const Nav = props => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -23,14 +23,18 @@ const Nav = (props) => {
     <nav className={styles.nav}>
       <ul>
         {site.siteMetadata.sections.map(module => (
-          <li>
+          <li className={styles.navItem}>
             <Link to={`#${module.id}`}>{module.label}</Link>
           </li>
         ))}
-        <li>
-          <Link to="https://www.facebook.com/ereptiledestruction/">
+        <li className={styles.fbNavItem}>
+          <a
+            href="https://www.facebook.com/ereptiledestruction/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={fbLogo} alt="Facebook" />
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>

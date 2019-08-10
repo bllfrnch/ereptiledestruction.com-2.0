@@ -3,16 +3,25 @@
 .section {
   background-color: scale-color(
     $color: map-get($colors, 'black'),
-    $lightness: 10%
+    $lightness: 15%
   );
   border-bottom: solid 8px
     scale-color($color: map-get($colors, 'black'), $lightness: 20%);
   margin-bottom: 2rem;
   padding: 1rem;
 
+  @include medium-up {
+    font-size: 1.125rem;
+  }
+
+  @include large {
+    font-size: 1.25rem;
+  }
+
   h2 {
     font-size: 1.5rem;
     text-align: center;
+    text-shadow: 0 2px map-get($colors, 'black');
 
     @include medium {
       font-size: 1.75rem;
@@ -51,7 +60,7 @@
   .contact {
     &:before,
     &:after {
-      content: '🦕🦖';
+      content: '🦕🦖🐛';
     }
   }
 
